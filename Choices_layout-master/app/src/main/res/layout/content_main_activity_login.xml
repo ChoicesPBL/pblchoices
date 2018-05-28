@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffdd7"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="choices.pbl.choices.MainActivity_login"
+    tools:showIn="@layout/activity_main_login">
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivLog"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="USUÁRIO"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etUsuario"
+        android:layout_alignRight="@+id/etUsuario"
+        android:layout_below="@+id/etUsuario"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="SENHA"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+
+        android:layout_below="@+id/etSenha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#9400AF"
+        android:onClick="edu"
+        android:text="LOGIN"
+        android:textColor="@android:color/background_light"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvNaotenho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:onClick="onClick"
+        android:text="NÃO TENHO CADASTRO"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/ivLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        app:srcCompat="@drawable/choices" />
+</RelativeLayout>
